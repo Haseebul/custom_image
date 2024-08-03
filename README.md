@@ -16,19 +16,44 @@ know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Supports various image types: asset, file, network, svg, memory, gifAsset, gifMemory, gifNetwork,
+jsonAsset, jsonFile, jsonNetwork, and jsonMemory.
+Customizable image shape options: circle, rectangle, oval, and none.
+Error builder and loader builder for better customization.
+Filter quality, blend mode, alignment, scale, border radius, and other image-specific properties.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+TODO: Add the package to your project by running the following command in your terminal:
+flutter pub add custom_image
+TODO: Import the package in your Dart file:
+import 'package:custom_image/custom_image.dart';
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+TODO: Here's a basic example of how to use the ImageService widget:
+ImageService(
+image: 'https://example.com/image.jpg',
+imageType: ImageType.network,
+imageShape: ImageShape.circle,
+height: 100,
+width: 100,
+);
+You can customize the appearance of the image by using various properties:
+ImageService(
+image: 'https://example.com/image.jpg',
+imageType: ImageType.network,
+imageShape: ImageShape.rectangle,
+height: 200,
+width: 300,
+filterQuality: FilterQuality.high,
+blendMode: BlendMode.multiply,
+alignment: Alignment.center,
+scale: 1.5,
+borderRadius: BorderRadius.circular(10),
+)
 ```dart
+
 const like = 'sample';
 ```
 
