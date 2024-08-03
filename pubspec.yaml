@@ -1,7 +1,8 @@
 name: custom_image
-description: "A new Flutter project."
-version: 0.0.1
-homepage:
+description: A Flutter package for loading and displaying different types of images with various customization options.
+version: 0.0.7
+
+homepage: https://github.com/Haseebul/custom_image
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
